@@ -1,0 +1,33 @@
+{
+    "name": "open-admin-ext/phpinfo",
+    "description": "an small plugin to show phpinfo right in your open-admin enviourment.",
+    "type": "library",
+    "keywords": ["open-admin", "extension"],
+    "homepage": "https://github.com/open-admin-ext/phpinfo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "open-admin",
+            "email": "infog@open-admin.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "open-admin-org/open-admin": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenAdmin\\PHPInfo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenAdmin\\PHPInfo\\PHPInfoServiceProvider"
+            ]
+        }
+    }
+}
