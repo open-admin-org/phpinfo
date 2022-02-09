@@ -1,5 +1,5 @@
-open-admin extension
-======
+PHP Info - extention
+====================
 
 Installation
 ------------
