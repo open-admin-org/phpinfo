@@ -2,8 +2,8 @@
 
 namespace OpenAdmin\PHPInfo\Http\Controllers;
 
-use OpenAdmin\Admin\Layout\Content;
 use Illuminate\Routing\Controller;
+use OpenAdmin\Admin\Layout\Content;
 use OpenAdmin\PHPInfo\PHPInfo;
 
 class PHPInfoController extends Controller
@@ -15,6 +15,6 @@ class PHPInfoController extends Controller
         return $content
             ->title('PHP info')
             ->description('An overview of your php ini settings')
-            ->body(view('phpinfo::index', ["info"=>$info]));
+            ->body(view('phpinfo::index', ['info'=>$info]));
     }
 }

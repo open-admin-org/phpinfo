@@ -11,8 +11,8 @@ class PHPInfoServiceProvider extends ServiceProvider
      */
     public function boot(PHPInfo $extension)
     {
-        if (! PHPInfo::boot()) {
-            return ;
+        if (!PHPInfo::boot()) {
+            return;
         }
 
         if ($views = $extension->views()) {
